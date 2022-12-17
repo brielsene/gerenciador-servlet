@@ -23,8 +23,10 @@ public class NovaEmpresaServlet extends HttpServlet {
 		
 		//Método para pegar 
 		String nomeEmpresa = request.getParameter("nome");
+		String senhaEmpresa = request.getParameter("senha");
 		
-		out.println("<html><body>Empresa "+nomeEmpresa +" cadastrada com sucesso </body></html>");
+		out.println("<html><body>Empresa "+nomeEmpresa +" cadastrada com sucesso, "+senhaEmpresa+ "</body></html>");
+		System.out.println(nomeEmpresa +" "+senhaEmpresa);
 	}
 
 }
